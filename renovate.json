@@ -3,8 +3,25 @@
   "extends": [
     "config:recommended"
   ],
+  "separateMajorMinor": false,
   "packageRules": [{
     "matchUpdateTypes": ["major"],
     "dependencyDashboardApproval": true
-  }]
+  },
+  {
+    "groupName": "all non-major dependencies",
+    "groupSlug": "all-minor-patch",
+    "matchPackageNames": [
+      "*"
+    ],
+    "matchUpdateTypes": [
+      "minor",
+      "patch"
+    ]
+  }
+],
+  "timezone": "America/Sao_Paulo",
+  "schedule": [
+    "every day at 11:00 pm"
+  ]
 }
