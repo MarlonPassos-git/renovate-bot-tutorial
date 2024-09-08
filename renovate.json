@@ -22,6 +22,6 @@
 ],
   "timezone": "America/Sao_Paulo",
   "schedule": [
-    "every day 11:00pm"
+    "before 11:00pm"
   ]
 }
